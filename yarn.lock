@@ -1254,6 +1254,11 @@ uri-js@^4.2.2:
   dependencies:
     punycode "^2.1.0"
 
+vite-plugin-single-spa@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/vite-plugin-single-spa/-/vite-plugin-single-spa-1.0.0.tgz#4bde2e96a97a52e972da97fab1e075cafb56df75"
+  integrity sha512-9HbXQZi5jZEWovm2YHJVMk54QNyYRClcDaZqWqf8AKQ3I3F66U//RIo/KFCApGueiFyNcQqPJ8BBFXC3jqRmzg==
+
 vite@^6.2.0:
   version "6.2.1"
   resolved "https://registry.yarnpkg.com/vite/-/vite-6.2.1.tgz#ae865d4bb93a11844be1bc647c8b2dd1856ea180"
