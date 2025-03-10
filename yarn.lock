@@ -587,6 +587,11 @@ braces@^3.0.3:
   dependencies:
     fill-range "^7.1.1"
 
+browserslist-config-single-spa@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/browserslist-config-single-spa/-/browserslist-config-single-spa-1.0.1.tgz#965f1f1606ba44671e649f410d8b8f735a327301"
+  integrity sha512-nqOxTbatv6FcdgBvUTuH4MuojMZwvskspz5Y4dmpVcKd0uaQY8KEl3iALWus16+AwPVe3BIerBNEgELyaHZcQg==
+
 callsites@^3.0.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/callsites/-/callsites-3.1.0.tgz#b3630abd8943432f54b3f0519238e33cd7df2f73"
@@ -1175,6 +1180,18 @@ shebang-regex@^3.0.0:
   resolved "https://registry.yarnpkg.com/shebang-regex/-/shebang-regex-3.0.0.tgz#ae16f1644d873ecad843b0307b143362d4c42172"
   integrity sha512-7++dFhtcx3353uBaq8DDR4NuxBetBzC7ZQOhmTQInHEd6bSrXdiEyzCvG07Z44UYdLShWUyXt5M/yhz8ekcb1A==
 
+single-spa-react@^6.0.2:
+  version "6.0.2"
+  resolved "https://registry.yarnpkg.com/single-spa-react/-/single-spa-react-6.0.2.tgz#05e3bb9e6063b0affe2f975282468c1366aec218"
+  integrity sha512-nRz5Izf57iYZXMXdTh+RmHnxxQojFL8NCIVUyA7PpXRib1ykmbat6JgT3yFPgXRs129BCC4+j+O5TLQOmLzF4Q==
+  dependencies:
+    browserslist-config-single-spa "^1.0.1"
+
+single-spa@^6.0.3:
+  version "6.0.3"
+  resolved "https://registry.yarnpkg.com/single-spa/-/single-spa-6.0.3.tgz#030c1b4a1dab80d29da858d93361d49127371a3b"
+  integrity sha512-pXlwHXHhs3hx/MnGQHBLdFCVAN2rlm9TLBKazbDMyZ25QRxoen2vlUZ47MyXKa9K8Gd5UZs/gkuQad4TGbViwg==
+
 source-map-js@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/source-map-js/-/source-map-js-1.2.1.tgz#1ce5650fddd87abc099eda37dcff024c2667ae46"
@@ -1203,6 +1220,11 @@ ts-api-utils@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/ts-api-utils/-/ts-api-utils-2.0.1.tgz#660729385b625b939aaa58054f45c058f33f10cd"
   integrity sha512-dnlgjFSVetynI8nzgJ+qF62efpglpWRk8isUEWZGWlJYySCTD6aKvbUDu+zbPeDakk3bg5H4XpitHukgfL1m9w==
+
+ts-config-single-spa@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/ts-config-single-spa/-/ts-config-single-spa-3.0.0.tgz#113112236cc1e13a59b6d351a57ae93aed7c763f"
+  integrity sha512-SS24+FHn9mi0awcoHN4l6uioBxPjgOnwI8adVZeNnw8oXJ8VyAGDqBfRF1EMVtd9Va0bxA8kkeU0SWtLS/Guvg==
 
 type-check@^0.4.0, type-check@~0.4.0:
   version "0.4.0"
