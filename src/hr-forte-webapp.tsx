@@ -11,7 +11,7 @@ const lifecycles = singleSpaReact({
   errorBoundary(err, info, props) {
     // Customize the root error boundary for your microfrontend here.
     console.error(err, info, props);
-    return <div>An error occurred in the HR Forte application</div>;
+    return <div>An error occurred in the @hr-forte/webapp</div>;
   },
 });
 

@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react-swc';
 import vitePluginSingleSpa from 'vite-plugin-single-spa';
+import externalize from 'vite-plugin-externalize-dependencies';
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -8,8 +9,12 @@ export default defineConfig({
   plugins: [
     react(),
     vitePluginSingleSpa({
+      type: 'mife',
       serverPort: 3000,
       spaEntryPoints: 'src/hr-forte-webapp.tsx',
+    }),
+    externalize({
+      externals: ['single-spa'],
     }),
   ],
   // server: {
@@ -17,16 +22,16 @@ export default defineConfig({
   //   cors: true,
   // },
   // build: {
-  //   // target: 'esnext',
-  //   // cssCodeSplit: false,
-  //   rollupOptions: {
-  //     preserveEntrySignatures: 'strict',
-  //     input: 'src/hr-forte-webapp.tsx',
-  //     output: {
-  //       format: 'esm',
-  //       entryFileNames: 'hr-forte-webapp.js',
-  //     },
-  //     external: ['single-spa'],
-  //   },
+  // target: 'esnext',
+  // cssCodeSplit: false,
+  // rollupOptions: {
+  // preserveEntrySignatures: 'strict',
+  // input: 'src/hr-forte-webapp.tsx',
+  // output: {
+  //   format: 'esm',
+  //   entryFileNames: 'hr-forte-webapp.js',
+  // },
+  // external: ['react', 'react-dom', 'single-spa'],
+  // },
   // },
 });
