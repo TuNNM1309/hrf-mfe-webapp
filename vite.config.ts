@@ -1,25 +1,23 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react-swc';
 import vitePluginSingleSpa from 'vite-plugin-single-spa';
-import externalize from 'vite-plugin-externalize-dependencies';
+
+const port = 8081;
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: 'http://localhost:3000',
+  base: `http://localhost:${port}`,
   plugins: [
     react(),
     vitePluginSingleSpa({
       type: 'mife',
-      serverPort: 3000,
+      projectId: 'hr-forte-webapp',
+      serverPort: port,
       spaEntryPoints: 'src/hr-forte-webapp.tsx',
-    }),
-    externalize({
-      externals: ['single-spa'],
     }),
   ],
   // server: {
-  //   port: 3000,
-  //   cors: true,
+  // cors: true,
   // },
   // build: {
   // target: 'esnext',
@@ -28,10 +26,16 @@ export default defineConfig({
   // preserveEntrySignatures: 'strict',
   // input: 'src/hr-forte-webapp.tsx',
   // output: {
-  //   format: 'esm',
+  //   format: 'systemjs',
   //   entryFileNames: 'hr-forte-webapp.js',
   // },
-  // external: ['react', 'react-dom', 'single-spa'],
+  // external: [
+  //   'single-spa',
+  //   /^@hr-forte\//,
+  //   'react',
+  //   'react-dom',
+  //   'react-dom/client',
+  // ],
   // },
   // },
 });
