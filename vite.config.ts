@@ -3,14 +3,16 @@ import react from '@vitejs/plugin-react-swc';
 import vitePluginSingleSpa from 'vite-plugin-single-spa';
 import externalize from 'vite-plugin-externalize-dependencies';
 
+//  TODO: Move this to a .env file
+const port = 8081;
 // https://vite.dev/config/
 export default defineConfig({
-  base: 'http://localhost:3000',
+  base: `http://localhost:${port}`,
   plugins: [
     react(),
     vitePluginSingleSpa({
       type: 'mife',
-      serverPort: 3000,
+      serverPort: port,
       spaEntryPoints: 'src/hr-forte-webapp.tsx',
     }),
     externalize({
